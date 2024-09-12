@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #666666;
+
+  gap: 50px;
+  justify-content: center;
+  padding: 20px;
+  margin: 10px;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.box {
+  width: 20%;
+  height: 226px;
+  background-color: red;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 3rem;
+  flex-direction: column;
+  transition: transform 200ms;
+  animation: appear 0.5s ease;
+}
+.box:hover {
+  transform: scale(1.23);
+}
+
+.box1,
+.box5,
+.box7 {
+  background-color: #f7f7c5;
+  background-image: linear-gradient(to bottom, #f7f7c5 70%, #666666 100%);
+  transform: rotate(-5deg);
+}
+.box2,
+.box4,
+.box8 {
+  background-color: #b8dfba;
+  background-image: linear-gradient(to bottom, #b8dfba 70%, #666666 100%);
+  transform: rotate(10deg);
+}
+.box3,
+.box6 {
+  background-color: #b5b4d2;
+  background-image: linear-gradient(to bottom, #b5b4d2 70%, #666666 100%);
+  transform: rotate(-10deg);
+}
+p {
+  font-size: 1.2rem;
+}
+/*ANIMAZIONE DELLE SINGOLE BOX*/
+.box1 {
+  animation-delay: 0s;
+}
+.box2 {
+  animation-delay: 0.2s;
+}
+.box3 {
+  animation-delay: 0.4s;
+}
+.box4 {
+  animation-delay: 0.6s;
+}
+.box5 {
+  animation-delay: 0.8s;
+}
+.box6 {
+  animation-delay: 1s;
+}
+.box7 {
+  animation-delay: 1.2s;
+}
+.box8 {
+  animation-delay: 1.4s;
+}
